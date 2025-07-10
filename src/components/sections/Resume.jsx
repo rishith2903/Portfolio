@@ -4,18 +4,19 @@ import { FaDownload, FaFileAlt, FaEye } from 'react-icons/fa';
 import './Resume.css';
 
 const Resume = () => {
+  // Single source of truth for resume URL
+  const RESUME_URL = `${import.meta.env.BASE_URL}resume.pdf`;
+  const RESUME_FILENAME = 'Rishith_Kumar_Pachipulusu_Resume.pdf';
+
   const handleDownload = () => {
     // Check if resume exists first
-    const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
-
-    // Try to download the resume
-    fetch(resumeUrl, { method: 'HEAD' })
+    fetch(RESUME_URL, { method: 'HEAD' })
       .then(response => {
         if (response.ok) {
           // File exists, proceed with download
           const link = document.createElement('a');
-          link.href = resumeUrl;
-          link.download = 'Rishith_Kumar_Pachipulusu_Resume.pdf';
+          link.href = RESUME_URL;
+          link.download = RESUME_FILENAME;
           document.body.appendChild(link);
           link.click();
           document.body.removeChild(link);
@@ -31,9 +32,8 @@ const Resume = () => {
   };
 
   const handleView = () => {
-    // Open PDF in new tab for viewing
-    const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
-    window.open(resumeUrl, '_blank');
+    // Open PDF in new tab for viewing - uses the same file as download
+    window.open(RESUME_URL, '_blank');
   };
 
   return (
