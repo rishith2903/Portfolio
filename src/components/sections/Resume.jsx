@@ -6,7 +6,7 @@ import './Resume.css';
 const Resume = () => {
   const handleDownload = () => {
     // Check if resume exists first
-    const resumeUrl = '/resume.pdf';
+    const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
 
     // Try to download the resume
     fetch(resumeUrl, { method: 'HEAD' })
@@ -32,7 +32,7 @@ const Resume = () => {
 
   const handleView = () => {
     // Open PDF in new tab for viewing
-    const resumeUrl = '/resume.pdf';
+    const resumeUrl = `${import.meta.env.BASE_URL}resume.pdf`;
     window.open(resumeUrl, '_blank');
   };
 

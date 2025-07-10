@@ -113,7 +113,7 @@ const Hero = () => {
             <div className="avatar-container">
               <div className="avatar-image">
                 <img
-                  src="/images/profile-photo.jpg"
+                  src={`${import.meta.env.BASE_URL}images/profile-photo.jpg`}
                   alt="Rishith Kumar Pachipulusu"
                   className="profile-photo"
                   style={{

@@ -21,11 +21,11 @@ If you want to use a different filename, update these files:
 
 ### Hero Section
 File: `src/components/sections/Hero.jsx`
-Line: `src="/images/profile-photo.jpg"`
+Line: `src={\`${import.meta.env.BASE_URL}images/profile-photo.jpg\`}`
 
-### About Section  
+### About Section
 File: `src/components/sections/About.jsx`
-Line: `src="/images/profile-photo.jpg"`
+Line: `src={\`${import.meta.env.BASE_URL}images/profile-photo.jpg\`}`
 
 ## Photo Optimization Tips
 
