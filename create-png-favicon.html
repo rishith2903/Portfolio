@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create PNG Favicon</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; text-align: center; background: #f5f5f5; }
+        .container { max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        canvas { border: 2px solid #ddd; margin: 20px; }
+        button { background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 15px 30px; border-radius: 6px; cursor: pointer; font-size: 16px; margin: 10px; }
+        button:hover { opacity: 0.9; }
+        h1 { color: #333; }
+        .info { background: #e3f2fd; padding: 15px; border-radius: 6px; margin: 15px 0; text-align: left; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Create RK PNG Favicon</h1>
+        
+        <div class="info">
+            <strong>This will create a PNG favicon with your RK initials that will definitely work!</strong>
+        </div>
+
+        <canvas id="favicon32" width="32" height="32" style="transform: scale(4);"></canvas>
+        
+        <div>
+            <button onclick="downloadFavicon()">Download favicon.png</button>
+            <button onclick="downloadFavicon16()">Download favicon-16x16.png</button>
+            <button onclick="downloadICO()">Download favicon.ico</button>
+        </div>
+
+        <div class="info">
+            <strong>Instructions:</strong>
+            <ol>
+                <li>Click "Download favicon.png" and save it to your <code>public</code> folder</li>
+                <li>Click "Download favicon-16x16.png" and save it to your <code>public</code> folder</li>
+                <li>Run <code>npm run build && npm run deploy</code></li>
+                <li>Your favicon will show up!</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        function createFavicon(size) {
+            const canvas = document.createElement('canvas');
+            canvas.width = size;
+            canvas.height = size;
+            const ctx = canvas.getContext('2d');
+            
+            // Create gradient background
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#667eea');
+            gradient.addColorStop(1, '#764ba2');
+            
+            // Draw rounded rectangle background
+            ctx.fillStyle = gradient;
+            roundRect(ctx, 0, 0, size, size, size * 0.15);
+            ctx.fill();
+            
+            // Draw RK text
+            ctx.fillStyle = 'white';
+            ctx.font = `bold ${size * 0.4}px Arial, sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText('RK', size / 2, size / 2);
+            
+            return canvas;
+        }
+        
+        function roundRect(ctx, x, y, width, height, radius) {
+            ctx.beginPath();
+            ctx.moveTo(x + radius, y);
+            ctx.lineTo(x + width - radius, y);
+            ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+            ctx.lineTo(x + width, y + height - radius);
+            ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+            ctx.lineTo(x + radius, y + height);
+            ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+            ctx.lineTo(x, y + radius);
+            ctx.quadraticCurveTo(x, y, x + radius, y);
+            ctx.closePath();
+        }
+        
+        // Create and display the 32x32 preview
+        const canvas32 = document.getElementById('favicon32');
+        const ctx32 = canvas32.getContext('2d');
+        
+        // Create gradient background
+        const gradient = ctx32.createLinearGradient(0, 0, 32, 32);
+        gradient.addColorStop(0, '#667eea');
+        gradient.addColorStop(1, '#764ba2');
+        
+        // Draw rounded rectangle background
+        ctx32.fillStyle = gradient;
+        roundRect(ctx32, 0, 0, 32, 32, 5);
+        ctx32.fill();
+        
+        // Draw RK text
+        ctx32.fillStyle = 'white';
+        ctx32.font = 'bold 14px Arial, sans-serif';
+        ctx32.textAlign = 'center';
+        ctx32.textBaseline = 'middle';
+        ctx32.fillText('RK', 16, 16);
+        
+        function downloadFavicon() {
+            const canvas = createFavicon(32);
+            const link = document.createElement('a');
+            link.download = 'favicon.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+        
+        function downloadFavicon16() {
+            const canvas = createFavicon(16);
+            const link = document.createElement('a');
+            link.download = 'favicon-16x16.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+        
+        function downloadICO() {
+            const canvas = createFavicon(32);
+            const link = document.createElement('a');
+            link.download = 'favicon.ico';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+            alert('Note: This downloads as PNG format. Most browsers will accept it as ICO.');
+        }
+    </script>
+</body>
+</html>
