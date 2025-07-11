@@ -29,25 +29,8 @@ const Projects = () => {
     }
   };
 
-  // Add "Coming Soon" projects
-  const comingSoonProjects = [
-    {
-      id: 'coming-1',
-      title: 'AI-Powered Web App',
-      description: 'Full-stack web application with integrated AI features. Currently in development phase.',
-      technologies: ['React', 'Python', 'AI', 'FastAPI'],
-      isComingSoon: true
-    },
-    {
-      id: 'coming-2',
-      title: 'Computer Vision Project',
-      description: 'Advanced computer vision system for real-world applications. More details coming soon!',
-      technologies: ['Python', 'OpenCV', 'Deep Learning', 'PyTorch'],
-      isComingSoon: true
-    }
-  ];
-
-  const allProjects = [...filteredProjects, ...comingSoonProjects];
+  // Use only real projects (removed coming soon projects)
+  const allProjects = filteredProjects;
 
   return (
     <section id="projects" className="projects">
@@ -94,27 +77,21 @@ const Projects = () => {
             {allProjects.map((project, index) => (
               <motion.div
                 key={project.id}
-                className={`project-card ${project.isComingSoon ? 'coming-soon' : ''}`}
+                className="project-card"
                 layout
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ 
+                transition={{
                   duration: 0.5,
                   delay: index * 0.1
                 }}
                 whileHover={{ y: -10 }}
               >
                 <div className="project-image">
-                  {project.isComingSoon ? (
-                    <div className="coming-soon-placeholder">
-                      <span className="coming-soon-text">Coming Soon</span>
-                    </div>
-                  ) : (
-                    <div className="project-placeholder">
-                      <span className="project-icon">🚀</span>
-                    </div>
-                  )}
+                  <div className="project-placeholder">
+                    <span className="project-icon">🚀</span>
+                  </div>
                 </div>
                 
                 <div className="project-content">
@@ -128,36 +105,34 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-                  
-                  {!project.isComingSoon && (
-                    <div className="project-links">
+
+                  <div className="project-links">
+                    <motion.a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      whileHover={{ scale: 1.1 }}
+                      whileTap={{ scale: 0.9 }}
+                    >
+                      <FaGithub />
+                      <span>Code</span>
+                    </motion.a>
+
+                    {project.live && (
                       <motion.a
-                        href={project.github}
+                        href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="project-link"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                       >
-                        <FaGithub />
-                        <span>Code</span>
+                        <FaExternalLinkAlt />
+                        <span>Live Demo</span>
                       </motion.a>
-                      
-                      {project.live && (
-                        <motion.a
-                          href={project.live}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="project-link"
-                          whileHover={{ scale: 1.1 }}
-                          whileTap={{ scale: 0.9 }}
-                        >
-                          <FaExternalLinkAlt />
-                          <span>Live Demo</span>
-                        </motion.a>
-                      )}
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </div>
               </motion.div>
             ))}
