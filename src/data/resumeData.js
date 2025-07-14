@@ -84,6 +84,15 @@ export const certifications = [
 export const projects = [
   {
     id: 1,
+    title: "Portfolio Website",
+    description: "Responsive personal website built with React, HTML, CSS, JavaScript. Showcases projects, skills, education, and certifications with interactive UI components.",
+    technologies: ["React", "HTML", "CSS", "JavaScript", "Vite", "Framer Motion"],
+    github: "https://github.com/rishith2903/Portfolio",
+    live: "https://rishith2903.github.io/Portfolio/",
+    image: "/api/placeholder/400/250"
+  },
+  {
+    id: 2,
     title: "Stock Management System",
     description: "Inventory app built with JavaFX and MySQL. Reduced manual errors by 30% through automated tracking and real-time inventory updates.",
     technologies: ["Java", "JavaFX", "MySQL", "JDBC"],
@@ -92,7 +101,7 @@ export const projects = [
     image: "/api/placeholder/400/250"
   },
   {
-    id: 2,
+    id: 3,
     title: "Podcast Summarizer + QA",
     description: "NLP system with Whisper, BERT, HuggingFace, Streamlit. Generates summaries and user-driven Q&A from audio content.",
     technologies: ["Python", "Whisper", "BERT", "HuggingFace", "Streamlit", "NLP"],
@@ -101,7 +110,7 @@ export const projects = [
     image: "/api/placeholder/400/250"
   },
   {
-    id: 3,
+    id: 4,
     title: "Deepfake Detection (CNN-LSTM)",
     description: "Hybrid model on DFDC dataset with CNN + LSTM. Improved video forensics using spatio-temporal patterns for accurate deepfake detection.",
     technologies: ["Python", "TensorFlow", "CNN", "LSTM", "OpenCV", "Deep Learning"],
