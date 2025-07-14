@@ -88,7 +88,7 @@ export const projects = [
     description: "Responsive personal website built with React, HTML, CSS, JavaScript. Showcases projects, skills, education, and certifications with interactive UI components.",
     technologies: ["React", "HTML", "CSS", "JavaScript", "Vite", "Framer Motion"],
     github: "https://github.com/rishith2903/Portfolio",
-    live: "https://rishith2903.github.io/Portfolio/",
+    live: null,
     image: "/api/placeholder/400/250"
   },
   {
