@@ -103,9 +103,10 @@ export const projects = [
   {
     id: 3,
     title: "Smart-Summary-Q&A Platform",
-    description: "AI-powered video and document processing platform built with React frontend and Node.js backend. Implements YouTube video transcription, BART neural summarization, and interactive Q&A using OpenAI API. Features batch video processing, PDF analysis, real-time status monitoring, and responsive Material-UI design. Deployed on GitHub Pages (frontend) and Render (backend) with automated CI/CD pipeline.",
-    technologies: ["React", "Node.js", "OpenAI API", "BART", "Material-UI", "YouTube API", "PDF Processing"],
+    description: "Full-stack AI-powered web application built with React, Node.js, Express, and Material-UI. Features intelligent video and document processing with real-time summarization, interactive Q&A system, batch processing capabilities, and responsive design with dark/light theme toggle.",
+    technologies: ["React", "Node.js", "OpenAI API", "BART", "Material-UI", "YouTube API", "PDF Processing","Python","HTML","CSS"],
     github: "https://github.com/rishith2903/Smart-Summary-Q-A_Frontend",
+    github: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://rishith2903.github.io/Smart-Summary-Q-A_Frontend/",
     image: "/api/placeholder/400/250"
   },
