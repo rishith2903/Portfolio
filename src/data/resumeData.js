@@ -102,11 +102,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Podcast Summarizer + QA",
-    description: "NLP system with Whisper, BERT, HuggingFace, Streamlit. Generates summaries and user-driven Q&A from audio content.",
-    technologies: ["Python", "Whisper", "BERT", "HuggingFace", "Streamlit", "NLP"],
-    github: "https://github.com/rishithkumar/podcast-summarizer",
-    live: null,
+    title: "Smart-Summary-Q&A Platform",
+    description: "AI-powered video and document processing platform built with React frontend and Node.js backend. Implements YouTube video transcription, BART neural summarization, and interactive Q&A using OpenAI API. Features batch video processing, PDF analysis, real-time status monitoring, and responsive Material-UI design. Deployed on GitHub Pages (frontend) and Render (backend) with automated CI/CD pipeline.",
+    technologies: ["React", "Node.js", "OpenAI API", "BART", "Material-UI", "YouTube API", "PDF Processing"],
+    github: "https://github.com/rishith2903/Smart-Summary-Q-A_Frontend",
+    live: "https://rishith2903.github.io/Smart-Summary-Q-A_Frontend/",
     image: "/api/placeholder/400/250"
   },
   {
