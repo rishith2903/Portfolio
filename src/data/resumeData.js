@@ -127,5 +127,5 @@ export const techFilters = [
   { name: "Java", value: "java" },
   { name: "Python", value: "python" },
   { name: "AI/ML", value: "aiml" },
-  { name: "Deep Learning", value: "deeplearning" }
+  
 ];
