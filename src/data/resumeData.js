@@ -43,7 +43,7 @@ export const skills = {
   cloud: ["AWS", "MySQL", "MongoDB"],
   aiml: ["Scikit-learn", "Pandas", "NumPy", "TensorFlow", "Keras"],
   nlp: ["NLTK", "Hugging Face", "BERT", "Whisper"],
-  soft: ["Teamwork", "Problem-Solving", "Communication", "Leadership", "Time Management", "Adaptability", "Critical Thinking", "Creativity"]
+  soft: ["Teamwork", "Problem-Solving", "Communication", "Leadership", "Time Management", "Critical Thinking"]
 };
 
 export const certifications = [
