@@ -30,7 +30,7 @@ export const education = [
     id: 3,
     institution: "Visvabharati High School",
     degree: "Secondary School Certificate (SSC)",
-    duration: "2019 - 2020",
+    duration: "2016- 2020",
     grade: "100%",
     location: "Vijayawada, India"
   }
@@ -104,7 +104,7 @@ export const projects = [
     id: 3,
     title: "Smart-Summary-Q&A Platform",
     description: "Full-stack AI-powered web application built with React, Node.js, Express, and Material-UI. Features intelligent video and document processing with real-time summarization, interactive Q&A system, batch processing capabilities, and responsive design with dark/light theme toggle.",
-    technologies: ["React", "Node.js", "OpenAI API", "BART", "Material-UI", "YouTube API", "PDF Processing","Python","HTML","CSS"],
+    technologies: ["React", "Node.js", "OpenAI API", "BART", "Whisper", "YouTube API", "PDF Processing","Python","HTML","CSS"],
     github: "https://github.com/rishith2903/Smart-Summary-Q-A_Frontend",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://rishith2903.github.io/Smart-Summary-Q-A_Frontend/",
