@@ -107,17 +107,47 @@ const Projects = () => {
                   </div>
 
                   <div className="project-links">
-                    <motion.a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
-                    >
-                      <FaGithub />
-                      <span>Code</span>
-                    </motion.a>
+                    {project.githubBackend ? (
+                      // Show separate Frontend and Backend links
+                      <>
+                        <motion.a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                        >
+                          <FaGithub />
+                          <span>Frontend</span>
+                        </motion.a>
+
+                        <motion.a
+                          href={project.githubBackend}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="project-link"
+                          whileHover={{ scale: 1.1 }}
+                          whileTap={{ scale: 0.9 }}
+                        >
+                          <FaGithub />
+                          <span>Backend</span>
+                        </motion.a>
+                      </>
+                    ) : (
+                      // Show single Code link for projects without separate backend
+                      <motion.a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-link"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                      >
+                        <FaGithub />
+                        <span>Code</span>
+                      </motion.a>
+                    )}
 
                     {project.live && (
                       <motion.a

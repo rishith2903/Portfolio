@@ -106,7 +106,7 @@ export const projects = [
     description: "Full-stack AI-powered web application built with React, Node.js, Express, and Material-UI. Features intelligent video and document processing with real-time summarization, interactive Q&A system, batch processing capabilities, and responsive design with dark/light theme toggle.",
     technologies: ["React", "Node.js", "OpenAI API", "BART", "Material-UI", "YouTube API", "PDF Processing","Python","HTML","CSS"],
     github: "https://github.com/rishith2903/Smart-Summary-Q-A_Frontend",
-    github: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
+    githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://rishith2903.github.io/Smart-Summary-Q-A_Frontend/",
     image: "/api/placeholder/400/250"
   },
