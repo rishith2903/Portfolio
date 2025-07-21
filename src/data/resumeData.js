@@ -89,7 +89,7 @@ export const projects = [
     technologies: ["React", "HTML", "CSS", "JavaScript", "Vite"],
     github: "https://github.com/rishith2903/Portfolio",
     live: null,
-    image: "/api/placeholder/400/250"
+    image: "/images/portfolio-SS.png"
   },
   {
     id: 2,
@@ -108,7 +108,7 @@ export const projects = [
     github: "https://github.com/rishith2903/Smart-Summary-Q-A_Frontend",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://rishith2903.github.io/Smart-Summary-Q-A_Frontend/",
-    image: "/api/placeholder/400/250"
+    image: "/images/smart-summary-qa.svg"
   },
   {
     id: 4,
@@ -128,3 +128,4 @@ export const techFilters = [
   { name: "AI/ML", value: "aiml" },
   { name: "Deep Learning", value: "deeplearning" }
 ];
+a
