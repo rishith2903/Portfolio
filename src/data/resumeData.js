@@ -123,9 +123,9 @@ export const projects = [
 
 export const techFilters = [
   { name: "All", value: "all" },
+  { name: "Web Dev", value: "web" },
   { name: "Java", value: "java" },
   { name: "Python", value: "python" },
   { name: "AI/ML", value: "aiml" },
   { name: "Deep Learning", value: "deeplearning" }
 ];
-a

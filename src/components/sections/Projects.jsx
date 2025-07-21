@@ -10,20 +10,50 @@ const Projects = () => {
 
   const handleFilterChange = (filterValue) => {
     setActiveFilter(filterValue);
-    
+
     if (filterValue === 'all') {
       setFilteredProjects(projects);
     } else {
       const filtered = projects.filter(project =>
-        project.technologies.some(tech =>
-          tech.toLowerCase().includes(filterValue.toLowerCase()) ||
-          (filterValue === 'aiml' && (tech.toLowerCase().includes('bert') ||
-           tech.toLowerCase().includes('nlp') || tech.toLowerCase().includes('whisper') ||
-           tech.toLowerCase().includes('huggingface'))) ||
-          (filterValue === 'deeplearning' && (tech.toLowerCase().includes('cnn') ||
-           tech.toLowerCase().includes('lstm') || tech.toLowerCase().includes('tensorflow') ||
-           tech.toLowerCase().includes('deep learning')))
-        )
+        project.technologies.some(tech => {
+          const techLower = tech.toLowerCase();
+
+          // Web Development technologies
+          if (filterValue === 'web') {
+            return techLower === 'react' || techLower === 'html' || techLower === 'css' ||
+                   techLower === 'javascript' || techLower === 'node.js' || techLower === 'vite' ||
+                   techLower === 'express' || techLower === 'material-ui';
+          }
+
+          // Exact matches for specific technologies
+          if (filterValue === 'java') {
+            return techLower === 'java' || techLower === 'javafx' || techLower === 'jdbc';
+          }
+
+          if (filterValue === 'python') {
+            return techLower === 'python';
+          }
+
+          // AI/ML related technologies
+          if (filterValue === 'aiml') {
+            return techLower.includes('bert') || techLower.includes('nlp') ||
+                   techLower.includes('whisper') || techLower.includes('huggingface') ||
+                   techLower.includes('openai') || techLower.includes('bart') ||
+                   techLower.includes('cnn') || techLower.includes('lstm') ||
+                   techLower.includes('tensorflow') || techLower.includes('deep learning') ||
+                   techLower.includes('keras') || techLower.includes('opencv');
+          }
+
+          // Deep Learning related technologies
+          if (filterValue === 'deeplearning') {
+            return techLower.includes('cnn') || techLower.includes('lstm') ||
+                   techLower.includes('tensorflow') || techLower.includes('deep learning') ||
+                   techLower.includes('keras');
+          }
+
+          // Default case for other filters
+          return techLower.includes(filterValue.toLowerCase());
+        })
       );
       setFilteredProjects(filtered);
     }
