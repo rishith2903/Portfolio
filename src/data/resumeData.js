@@ -98,7 +98,7 @@ export const projects = [
     technologies: ["Java", "JavaFX", "MySQL", "JDBC"],
     github: "https://github.com/rishithkumar/stock-management-system",
     live: null,
-    image: "/api/placeholder/400/250"
+    image: "/images/stock-management-placeholder.svg"
   },
   {
     id: 3,
@@ -117,7 +117,7 @@ export const projects = [
     technologies: ["Python", "TensorFlow", "CNN", "LSTM", "OpenCV", "Deep Learning"],
     github: "https://github.com/rishithkumar/deepfake-detection",
     live: null,
-    image: "/api/placeholder/400/250"
+    image: "/images/deepfake-detection-placeholder.svg"
   }
 ];
 
@@ -127,5 +127,5 @@ export const techFilters = [
   { name: "Java", value: "java" },
   { name: "Python", value: "python" },
   { name: "AI/ML", value: "aiml" },
-  
+  { name: "Deep Learning", value: "deeplearning" }
 ];
