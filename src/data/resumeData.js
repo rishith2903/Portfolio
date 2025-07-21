@@ -85,7 +85,7 @@ export const projects = [
   {
     id: 1,
     title: "Portfolio Website",
-    description: "Responsive personal website built with React, HTML, CSS, JavaScript. Showcases projects, skills, education, and certifications with interactive UI components.",
+    description: "Built a personal portfolio using React, Vite, CSS, and Framer Motion to showcase my skills and projects.Features include interactive navigation, project filtering, smooth animations, and a fully responsive dark theme.",
     technologies: ["React", "HTML", "CSS", "JavaScript", "Vite"],
     github: "https://github.com/rishith2903/Portfolio",
     live: null,
@@ -103,7 +103,7 @@ export const projects = [
   {
     id: 3,
     title: "Smart-Summary-Q&A Platform",
-    description: "Full-stack AI-powered web application built with React, Node.js, Express, and Material-UI. Features intelligent video and document processing with real-time summarization, interactive Q&A system, batch processing capabilities, and responsive design with dark/light theme toggle.",
+    description: "Full-stack AI-powered web application for content summarization and Q&A. Features intelligent video and document processing with real-time summarization, interactive Q&A system, batch processing capabilities, and responsive design with dark/light theme toggle.",
     technologies: ["React", "Node.js", "OpenAI API", "BART", "Whisper", "YouTube API", "PDF Processing","Python","HTML","CSS"],
     github: "https://github.com/rishith2903/Smart-Summary-Q-A_Frontend",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
