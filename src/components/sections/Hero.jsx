@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { personalInfo } from '../../data/resumeData';
 import './Hero.css';
 
@@ -101,6 +102,42 @@ const Hero = () => {
               >
                 Contact Me
               </motion.button>
+            </motion.div>
+
+            <motion.div
+              className="hero-social"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.0, duration: 0.8 }}
+            >
+              <motion.a
+                href={personalInfo.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                whileHover={{ scale: 1.2, y: -5 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaGithub />
+              </motion.a>
+              <motion.a
+                href={personalInfo.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                whileHover={{ scale: 1.2, y: -5 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaLinkedin />
+              </motion.a>
+              <motion.a
+                href={`mailto:${personalInfo.email}`}
+                className="social-link"
+                whileHover={{ scale: 1.2, y: -5 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <FaEnvelope />
+              </motion.a>
             </motion.div>
           </motion.div>
           
