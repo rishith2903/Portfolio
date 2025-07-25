@@ -4,7 +4,7 @@ export const personalInfo = {
   email: "rishithpachipulsu@gmail.com",
   phone: "+91 7901357303",
   location: "Vijayawada, India",
-  about: "Motivated Full-Stack Developer with strong Backend expertise in Java and Spring Boot. Experienced in building real-world solutions with a focus on problem-solving and team collaboration. Eager to contribute to innovative projects and grow as a backend-oriented engineer.",
+  about: "Full-Stack Developer with a strong backend focus in Java & Spring Boot, and a passion for building scalable applications. Experienced in Machine Learning, NLP, and Data Science, with hands-on projects combining software engineering and AI to deliver real-world solutions.",
   github: "https://github.com/rishith29",
   linkedin: "https://www.linkedin.com/in/rishith-kumar-pachipulusu-13351a31b/"
 };
@@ -93,21 +93,22 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Stock Management System",
-    description: "Inventory app built with JavaFX and MySQL. Reduced manual errors by 30% through automated tracking and real-time inventory updates.",
-    technologies: ["Java", "JavaFX", "MySQL", "JDBC"],
-    github: "https://github.com/rishithkumar/stock-management-system",
-    live: null,
-    image: "/images/stock-management-placeholder.svg"
+    title: "MedReserve AI – Healthcare Booking System",
+    description: "Full-stack app with Spring Boot, React.js, MySQL, JWT, WebSockets, Docker, and FastAPI (ML). Real-time chat, role-based dashboards, chatbot-assisted scheduling. ML-based doctor recommendation, encrypted chat/files, and health analytics.",
+    technologies: ["Spring Boot", "React.js", "MySQL", "JWT", "WebSockets", "Docker", "FastAPI", "Machine Learning", "Java", "Python"],
+    github: "https://github.com/rishith2903/MedReserve-AI",
+    githubBackend: "https://github.com/rishith2903/MedReserve-AI_Backend",
+    live: "https://rishith2903.github.io/MedReserve-AI/",
+    image: "/images/medreserve-ai-placeholder.svg"
   },
   {
     id: 3,
     title: "Smart-Summary-Q&A Platform",
     description: "Full-stack AI-powered web application for content summarization and Q&A. Features intelligent video and document processing with real-time summarization, interactive Q&A system, batch processing capabilities, and responsive design with dark/light theme toggle.",
     technologies: ["React", "Node.js", "OpenAI API", "BART", "Whisper", "YouTube API", "PDF Processing","Python","HTML","CSS"],
-    github: "https://github.com/rishith2903/Smart-Summary-Q-A_Frontend",
+    github: "https://github.com/rishith2903/Smart-Summary-Q-A",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
-    live: "https://rishith2903.github.io/Smart-Summary-Q-A_Frontend/",
+    live: "https://rishith2903.github.io/Smart-Summary-Q-A/",
     image: "/images/smart-summary-qa.svg"
   },
   {
