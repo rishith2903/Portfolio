@@ -89,7 +89,7 @@ export const projects = [
     technologies: ["React", "HTML", "CSS", "JavaScript", "Vite"],
     github: "https://github.com/rishith2903/Portfolio",
     live: null,
-    image: "/images/portfolio-SS.png"
+    image: "public/images/portfolio-SS.png"
   },
   {
     id: 2,
@@ -99,7 +99,7 @@ export const projects = [
     github: "https://github.com/rishith2903/MedReserve-AI",
     githubBackend: "https://github.com/rishith2903/MedReserve-AI_Backend",
     live: "https://rishith2903.github.io/MedReserve-AI/",
-    image: "/images/medreserve-ai-placeholder.svg"
+    image: "public/images/medreserve-ai-placeholder.svg"
   },
   {
     id: 3,
@@ -109,7 +109,7 @@ export const projects = [
     github: "https://github.com/rishith2903/Smart-Summary-Q-A",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://rishith2903.github.io/Smart-Summary-Q-A/",
-    image: "/images/smart-summary-qa.svg"
+    image: "public/images/smart-summary.png"
   },
   {
     id: 4,
@@ -128,5 +128,4 @@ export const techFilters = [
   { name: "Java", value: "java" },
   { name: "Python", value: "python" },
   { name: "AI/ML", value: "aiml" },
-  { name: "Deep Learning", value: "deeplearning" }
 ];
