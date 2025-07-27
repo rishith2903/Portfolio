@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Modern portfolio website for Rishith Kumar Pachipulusu",
   "author": "Rishith Kumar Pachipulusu",
-  "homepage": "https://rishith2903.github.io/Portfolio",
+  "homepage": "https://rishith-portfolio.vercel.app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

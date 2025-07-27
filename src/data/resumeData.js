@@ -5,7 +5,7 @@ export const personalInfo = {
   phone: "+91 7901357303",
   location: "Vijayawada, India",
   about: "Full-Stack Developer with a strong backend focus in Java & Spring Boot, and a passion for building scalable applications. Experienced in Machine Learning, NLP, and Data Science, with hands-on projects combining software engineering and AI to deliver real-world solutions.",
-  github: "https://github.com/rishith29",
+  github: "https://github.com/rishith2903",
   linkedin: "https://www.linkedin.com/in/rishith-kumar-pachipulusu-13351a31b/"
 };
 
@@ -89,7 +89,7 @@ export const projects = [
     technologies: ["React", "HTML", "CSS", "JavaScript", "Vite"],
     github: "https://github.com/rishith2903/Portfolio",
     live: null,
-    image: "public/images/portfolio-SS.png"
+    image: "/images/portfolio-SS.png"
   },
   {
     id: 2,
@@ -99,7 +99,7 @@ export const projects = [
     github: "https://github.com/rishith2903/MedReserve-AI",
     githubBackend: "https://github.com/rishith2903/MedReserve-AI_Backend",
     live: "https://rishith2903.github.io/MedReserve-AI/",
-    image: "public/images/medreserve-ai-placeholder.svg"
+    image: "/images/medreserve-ai-placeholder.svg"
   },
   {
     id: 3,
@@ -109,7 +109,7 @@ export const projects = [
     github: "https://github.com/rishith2903/Smart-Summary-Q-A",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://rishith2903.github.io/Smart-Summary-Q-A/",
-    image: "public/images/smart-summary.png"
+    image: "/images/smart-summary.png"
   },
   {
     id: 4,
