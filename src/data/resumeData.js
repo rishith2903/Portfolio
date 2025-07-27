@@ -98,7 +98,7 @@ export const projects = [
     technologies: ["Spring Boot", "React.js", "MySQL", "JWT", "WebSockets", "Docker", "FastAPI", "Machine Learning", "Java", "Python"],
     github: "https://github.com/rishith2903/MedReserve-AI",
     githubBackend: "https://github.com/rishith2903/MedReserve-AI_Backend",
-    live: "https://rishith2903.github.io/MedReserve-AI/",
+    live: "https://med-reserve-ai.vercel.app/login",
     image: "/images/medreserve-ai-placeholder.svg"
   },
   {
@@ -108,7 +108,7 @@ export const projects = [
     technologies: ["React", "Node.js", "OpenAI API", "BART", "Whisper", "YouTube API", "PDF Processing","Python","HTML","CSS"],
     github: "https://github.com/rishith2903/Smart-Summary-Q-A",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
-    live: "https://rishith2903.github.io/Smart-Summary-Q-A/",
+    live: "https://smart-summary-q-a.vercel.app/",
     image: "/images/smart-summary.png"
   },
   {
