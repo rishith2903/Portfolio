@@ -84,18 +84,18 @@ export const certifications = [
 export const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description: "Built a personal portfolio using React, Vite, CSS, and Framer Motion to showcase my skills and projects.Features include interactive navigation, project filtering, smooth animations, and a fully responsive dark theme.",
-    technologies: ["React", "HTML", "CSS", "JavaScript", "Vite"],
+    title: "Personal Portfolio Website",
+    description: "Designed and developed a responsive personal portfolio website using React.js, Tailwind CSS, and Framer Motion. Features project showcases, certification display, dynamic routing, and a responsive dark mode. Deployed on Vercel for fast, global performance.",
+    technologies: ["React.js", "Tailwind CSS", "Framer Motion", "Vercel", "Responsive Design"],
     github: "https://github.com/rishith2903/Portfolio",
-    live: null,
+    live: "https://portfolio-one-jade-97.vercel.app/",
     image: "/images/portfolio-SS.png"
   },
   {
     id: 2,
-    title: "MedReserve AI – Healthcare Booking System",
-    description: "Full-stack app with Spring Boot, React.js, MySQL, JWT, WebSockets, Docker, and FastAPI (ML). Real-time chat, role-based dashboards, chatbot-assisted scheduling. ML-based doctor recommendation, encrypted chat/files, and health analytics.",
-    technologies: ["Spring Boot", "React.js", "MySQL", "JWT", "WebSockets", "Docker", "FastAPI", "Machine Learning", "Java", "Python"],
+    title: "MedReserve AI – Healthcare Booking Platform",
+    description: "Built a full-stack healthcare booking system using Spring Boot, React.js, and FastAPI that enables users to search, book, and manage doctor appointments. Integrated JWT-based authentication for secure role-based access (admin, doctor, patient), real-time dashboards, and AI-driven NLP chatbot for symptom-based doctor recommendations. Backend deployed on Render with PostgreSQL; frontend hosted on Vercel.",
+    technologies: ["Spring Boot", "FastAPI", "React.js", "JWT", "PostgreSQL", "NLP", "Chatbot", "REST API", "Role-based Auth"],
     github: "https://github.com/rishith2903/MedReserve-AI",
     githubBackend: "https://github.com/rishith2903/MedReserve-AI_Backend",
     live: "https://med-reserve-ai.vercel.app/login",
@@ -103,9 +103,9 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Smart-Summary-Q&A Platform",
-    description: "Full-stack AI-powered web application for content summarization and Q&A. Features intelligent video and document processing with real-time summarization, interactive Q&A system, batch processing capabilities, and responsive design with dark/light theme toggle.",
-    technologies: ["React", "Node.js", "OpenAI API", "BART", "Whisper", "YouTube API", "PDF Processing","Python","HTML","CSS"],
+    title: "Smart Summary Q&A – AI-Powered Transcript Platform",
+    description: "Developed a real-time video/audio summarization and Q&A system using Whisper (OpenAI) for speech-to-text and BART for summarization. Built with React.js frontend and Node.js + FastAPI backend, using WebSockets for live transcript streaming. Enabled dynamic Q&A generation with OpenAI GPT and integrated transcript download support.",
+    technologies: ["Whisper", "BART", "OpenAI", "React.js", "FastAPI", "Node.js", "WebSocket", "Speech-to-Text", "Real-time Transcript"],
     github: "https://github.com/rishith2903/Smart-Summary-Q-A",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://smart-summary-q-a.vercel.app/",
