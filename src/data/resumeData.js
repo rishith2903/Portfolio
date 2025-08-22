@@ -122,15 +122,6 @@ export const projects = [
     live: "https://aithlete.vercel.app/",
     image: "/images/aithlete-placeholder.svg"
   },
-  {
-    id: 5,
-    title: "Deepfake Detection (CNN-LSTM)",
-    description: "Hybrid model on DFDC dataset with CNN + LSTM. Improved video forensics using spatio-temporal patterns for accurate deepfake detection.",
-    technologies: ["Python", "TensorFlow", "CNN", "LSTM", "OpenCV", "Deep Learning"],
-    github: "https://github.com/rishithkumar/deepfake-detection",
-    live: null,
-    image: "/images/deepfake-detection-placeholder.svg"
-  }
 ];
 
 export const extracurriculars = [
