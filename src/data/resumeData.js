@@ -119,6 +119,7 @@ export const projects = [
     description: "Built a full-stack fitness website using Spring Boot, React.js, and PostgreSQL. Integrated AI models for personalized workouts, diet plans, chatbot, and pose detection. Delivered a scalable platform with dashboards, theming, and live deployment.",
     technologies: ["Spring Boot", "React.js", "PostgreSQL", "AI Models", "Chatbot", "Pose Detection"],
     github: "https://github.com/rishith2903/AIthlete", // add repo link if exists
+    githubBackend: "https://github.com/rishith2903/AIthlete_backend",
     live: null,
     image: "/images/aithlete-placeholder.svg"
   },
