@@ -103,6 +103,30 @@
   opacity: 0.7;
 }
 
+/* 🔥 Thumbnail Support */
+.project-thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Zoom effect on hover */
+.project-card:hover .project-thumbnail {
+  transform: scale(1.05);
+}
+
+/* Gradient overlay on images for readability */
+.project-image::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
 .coming-soon-placeholder {
   display: flex;
   align-items: center;
