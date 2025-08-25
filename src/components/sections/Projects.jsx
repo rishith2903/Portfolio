@@ -119,9 +119,17 @@ const Projects = () => {
                 whileHover={{ y: -10 }}
               >
                 <div className="project-image">
-                  <div className="project-placeholder">
-                    <span className="project-icon">🚀</span>
-                  </div>
+                  {project.thumbnail ? (
+                    <img 
+                      src={project.thumbnail} 
+                      alt={project.title} 
+                      className="project-thumbnail"
+                    />
+                  ) : (
+                    <div className="project-placeholder">
+                      <span className="project-icon">🚀</span>
+                    </div>
+                  )}
                 </div>
                 
                 <div className="project-content">

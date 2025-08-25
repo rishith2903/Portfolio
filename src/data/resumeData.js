@@ -6,7 +6,7 @@ export const personalInfo = {
   location: "Vijayawada, India",
   about: "Versatile Computer Science student skilled in AI/ML and Full-Stack Development. Experienced in building end-to-end solutions from backend systems to intelligent AI applications. Passionate about delivering innovative, high-quality software.",
   github: "https://github.com/rishith2903",
-  linkedin: "https://www.linkedin.com/in/rishith-kumar-pachipulusu-13351a31b/",
+  linkedin: "https://www.linkedin.com/in/rishith-kumar-pachipulusu-2748b4380/",
   portfolio: "https://portfolio-one-jade-97.vercel.app/"
 };
 
@@ -91,7 +91,7 @@ export const projects = [
     technologies: ["React.js", "Tailwind CSS", "Framer Motion", "Vercel", "Responsive Design", "SEO"],
     github: "https://github.com/rishith2903/Portfolio",
     live: "https://portfolio-one-jade-97.vercel.app/",
-    image: "/images/portfolio-SS.png"
+    image: "/assets/images/project_image/Portfolio.png"
   },
   {
     id: 2,
@@ -101,7 +101,7 @@ export const projects = [
     github: "https://github.com/rishith2903/Smart-Summary-Q-A",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://smart-summary-q-a.vercel.app/",
-    image: "/images/smart-summary.png"
+    image: "/assets/images/project_image/smart-summary.png"
   },
   {
     id: 3,
@@ -111,7 +111,7 @@ export const projects = [
     github: "https://github.com/rishith2903/MedReserve-AI",
     githubBackend: "https://github.com/rishith2903/MedReserve-AI_Backend",
     live: "https://med-reserve-ai.vercel.app/login",
-    image: "/images/medreserve-ai-placeholder.svg"
+    image: "/assets/images/project_image/MedReserve_AI.png"
   },
   {
     id: 4,
