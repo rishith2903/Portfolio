@@ -4,6 +4,8 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { projects, techFilters } from '../../data/resumeData';
 import './Projects.css';
 
+
+
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
   const [filteredProjects, setFilteredProjects] = useState(projects);

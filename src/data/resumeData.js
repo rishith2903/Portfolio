@@ -84,34 +84,35 @@ export const certifications = [
 ];
 
 export const projects = [
+  
   {
     id: 1,
-    title: "Personal Portfolio Website",
-    description: "Designed and developed a responsive personal portfolio website using React.js, Tailwind CSS, and Framer Motion. Features project showcases, certification display, dynamic routing, dark/light themes, and SEO optimization. Deployed on Vercel with GitHub content linking.",
-    technologies: ["React.js", "Tailwind CSS", "Framer Motion", "Vercel", "Responsive Design", "SEO"],
-    github: "https://github.com/rishith2903/Portfolio",
-    live: "https://portfolio-one-jade-97.vercel.app/",
-    image: "/assets/images/project_image/Portfolio.png"
-  },
-  {
-    id: 2,
     title: "Smart Summary Q&A – AI-Powered Transcript Platform",
     description: "Developed a real-time video/audio summarization and Q&A system using Whisper (OpenAI) for speech-to-text and BART for summarization. Built with React.js frontend and Node.js + FastAPI backend, using WebSockets for live transcript streaming. Enabled dynamic Q&A generation with OpenAI GPT, serving 500+ users and improving response accuracy by 20%.",
     technologies: ["Whisper", "BART", "OpenAI", "React.js", "FastAPI", "Node.js", "WebSocket", "Speech-to-Text", "Real-time Transcript"],
     github: "https://github.com/rishith2903/Smart-Summary-Q-A",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://smart-summary-q-a.vercel.app/",
-    image: "/assets/images/project_image/smart-summary.png"
+    thumbnail: "/src/data/smart-summary.png"
   },
   {
-    id: 3,
+    id: 2,
     title: "MedReserve AI – Healthcare Booking Platform",
     description: "Built a full-stack healthcare booking system using Spring Boot, React.js, and FastAPI that enables users to search, book, and manage doctor appointments. Integrated JWT-based authentication for secure role-based access (admin, doctor, patient), real-time dashboards, and AI-driven NLP chatbot for symptom-based doctor recommendations. Reduced appointment booking time by 30%. Backend deployed on Render with PostgreSQL; frontend hosted on Vercel.",
     technologies: ["Spring Boot", "FastAPI", "React.js", "JWT", "PostgreSQL", "NLP", "Chatbot", "REST API", "Role-based Auth"],
     github: "https://github.com/rishith2903/MedReserve-AI",
     githubBackend: "https://github.com/rishith2903/MedReserve-AI_Backend",
     live: "https://med-reserve-ai.vercel.app/login",
-    image: "/assets/images/project_image/MedReserve_AI.png"
+    thumbnail: "/src/data/MedReserve_AI.png"
+  },
+  {
+    id: 3,
+    title: "Personal Portfolio Website",
+    description: "Designed and developed a responsive personal portfolio website using React.js, Tailwind CSS, and Framer Motion. Features project showcases, certification display, dynamic routing, dark/light themes, and SEO optimization. Deployed on Vercel with GitHub content linking.",
+    technologies: ["React.js", "Tailwind CSS", "Framer Motion", "Vercel", "Responsive Design", "SEO"],
+    github: "https://github.com/rishith2903/Portfolio",
+    live: "https://portfolio-one-jade-97.vercel.app/",
+    thumbnail: "/src/data/portfolio-SS.png"
   },
   {
     id: 4,
@@ -121,7 +122,7 @@ export const projects = [
     github: "https://github.com/rishith2903/AIthlete", // add repo link if exists
     githubBackend: "https://github.com/rishith2903/AIthlete_backend",
     live: null,
-    image: "/images/aithlete-placeholder.svg"
+    
   },
 ];
 
