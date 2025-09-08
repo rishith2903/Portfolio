@@ -82,9 +82,7 @@ export const certifications = [
     link: "https://drive.google.com/file/d/1rP1cYl1GlBrntmlKNgPML5SBnFVKGiME/view?usp=drive_link"
   }
 ];
-import smartSummaryImg from "../assets/images/smart-summary.png";
-import medReserveImg from "../assets/images/MedReserve_AI.png";
-import portfolioImg from "../assets/images/portfolio-SS.png";
+
 
 export const projects = [
   
