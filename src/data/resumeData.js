@@ -93,7 +93,7 @@ export const projects = [
     github: "https://github.com/rishith2903/Smart-Summary-Q-A",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://smart-summary-q-a.vercel.app/",
-    thumbnail: "/src/data/smart-summary.png"
+    thumbnail: "/public/images/smart-summary.png"
   },
   {
     id: 2,
@@ -103,7 +103,7 @@ export const projects = [
     github: "https://github.com/rishith2903/MedReserve-AI",
     githubBackend: "https://github.com/rishith2903/MedReserve-AI_Backend",
     live: "https://med-reserve-ai.vercel.app/login",
-    thumbnail: "/src/data/MedReserve_AI.png"
+    thumbnail: "/public/images/MedReserve_AI.png"
   },
   {
     id: 3,
@@ -112,7 +112,7 @@ export const projects = [
     technologies: ["React.js", "Tailwind CSS", "Framer Motion", "Vercel", "Responsive Design", "SEO"],
     github: "https://github.com/rishith2903/Portfolio",
     live: "https://portfolio-one-jade-97.vercel.app/",
-    thumbnail: "/src/data/portfolio-SS.png"
+    thumbnail: "/public/images/portfolio-SS.png"
   },
   {
     id: 4,
