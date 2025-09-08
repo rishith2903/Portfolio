@@ -82,6 +82,9 @@ export const certifications = [
     link: "https://drive.google.com/file/d/1rP1cYl1GlBrntmlKNgPML5SBnFVKGiME/view?usp=drive_link"
   }
 ];
+import smartSummaryImg from "../assets/images/smart-summary.png";
+import medReserveImg from "../assets/images/MedReserve_AI.png";
+import portfolioImg from "../assets/images/portfolio-SS.png";
 
 export const projects = [
   
@@ -93,7 +96,7 @@ export const projects = [
     github: "https://github.com/rishith2903/Smart-Summary-Q-A",
     githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
     live: "https://smart-summary-q-a.vercel.app/",
-    thumbnail: "/public/images/smart-summary.png"
+    thumbnail: "/public/images/Project/smart-summary.png"
   },
   {
     id: 2,
@@ -103,7 +106,8 @@ export const projects = [
     github: "https://github.com/rishith2903/MedReserve-AI",
     githubBackend: "https://github.com/rishith2903/MedReserve-AI_Backend",
     live: "https://med-reserve-ai.vercel.app/login",
-    thumbnail: "/public/images/MedReserve_AI.png"
+    thumbnail:  "/public/images/Project/MedReserve_AI.png",
+
   },
   {
     id: 3,
@@ -112,7 +116,7 @@ export const projects = [
     technologies: ["React.js", "Tailwind CSS", "Framer Motion", "Vercel", "Responsive Design", "SEO"],
     github: "https://github.com/rishith2903/Portfolio",
     live: "https://portfolio-one-jade-97.vercel.app/",
-    thumbnail: "/public/images/portfolio-SS.png"
+    thumbnail: "/public/images/Project/portfolio.png"
   },
   {
     id: 4,
