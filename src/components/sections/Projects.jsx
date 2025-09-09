@@ -22,36 +22,33 @@ const Projects = () => {
 
           // Web Development technologies
           if (filterValue === 'web') {
-            return techLower === 'react' || techLower === 'html' || techLower === 'css' ||
+            return techLower === 'react.js' || techLower === 'html' || techLower === 'css' ||
                    techLower === 'javascript' || techLower === 'node.js' || techLower === 'vite' ||
                    techLower === 'express' || techLower === 'material-ui';
           }
 
           // Exact matches for specific technologies
-          if (filterValue === 'java') {
-            return techLower === 'java' || techLower === 'javafx' || techLower === 'jdbc';
+          if (filterValue === 'Spring Boot') {
+            return techLower === 'spring boot' || techLower === 'spring' || techLower === 'java';
           }
 
-          if (filterValue === 'python') {
-            return techLower === 'python';
+          if (filterValue === 'Node.js') {
+            return techLower === 'node.js';
           }
 
           // AI/ML related technologies
-          if (filterValue === 'aiml') {
+          if (filterValue === 'AI Models') {
             return techLower.includes('bert') || techLower.includes('nlp') ||
                    techLower.includes('whisper') || techLower.includes('huggingface') ||
                    techLower.includes('openai') || techLower.includes('bart') ||
                    techLower.includes('cnn') || techLower.includes('lstm') ||
                    techLower.includes('tensorflow') || techLower.includes('deep learning') ||
-                   techLower.includes('keras') || techLower.includes('opencv');
+                   techLower.includes('keras') || techLower.includes('opencv')||
+                   techLower === 'ai model' ||techLower === 'ml model'|| 
+                   techLower === 'Chatbot'||techLower === 'nlp model';
           }
 
-          // Deep Learning related technologies
-          if (filterValue === 'deeplearning') {
-            return techLower.includes('cnn') || techLower.includes('lstm') ||
-                   techLower.includes('tensorflow') || techLower.includes('deep learning') ||
-                   techLower.includes('keras');
-          }
+          
 
           // Default case for other filters
           return techLower.includes(filterValue.toLowerCase());

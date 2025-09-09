@@ -78,6 +78,8 @@
 }
 
 .skill-badge {
+  display: flex;
+  align-items: center;
   padding: 0.6rem 1.2rem;
   border-radius: 25px;
   border: 1px solid;
@@ -111,36 +113,38 @@
   font-weight: 600;
 }
 
+/* 🔹 New: icon styling inside badges */
+.skill-icon {
+  margin-right: 6px;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* 🔹 New: project links below categories */
+.project-links {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #ccc;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+.project-links:hover {
+  color: #fff;
+}
+
 /* Specific category styling */
-.skill-category:nth-child(1) {
-  border-top: 3px solid #667eea;
-}
+.skill-category:nth-child(1) { border-top: 3px solid #667eea; }
+.skill-category:nth-child(2) { border-top: 3px solid #764ba2; }
+.skill-category:nth-child(3) { border-top: 3px solid #f093fb; }
+.skill-category:nth-child(4) { border-top: 3px solid #4facfe; }
+.skill-category:nth-child(5) { border-top: 3px solid #43e97b; }
+.skill-category:nth-child(6) { border-top: 3px solid #9c88ff; }
+.skill-category:nth-child(7) { border-top: 3px solid #ff6b6b; }
 
-.skill-category:nth-child(2) {
-  border-top: 3px solid #764ba2;
-}
-
-.skill-category:nth-child(3) {
-  border-top: 3px solid #f093fb;
-}
-
-.skill-category:nth-child(4) {
-  border-top: 3px solid #4facfe;
-}
-
-.skill-category:nth-child(5) {
-  border-top: 3px solid #43e97b;
-}
-
-.skill-category:nth-child(6) {
-  border-top: 3px solid #9c88ff;
-}
-
-.skill-category:nth-child(7) {
-  border-top: 3px solid #ff6b6b;
-}
-
-/* Special styling for soft skills - center them */
+/* Special styling for soft skills */
 .skill-category:nth-child(7) .skills-list {
   justify-content: center;
   max-width: 600px;

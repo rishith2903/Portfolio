@@ -60,6 +60,7 @@ const Certifications = () => {
               <div className="cert-icon">
                 <span className="icon-emoji">{cert.icon}</span>
               </div>
+              
               <div className="cert-content">
                 <h3 className="cert-title">{cert.title}</h3>
                 <p className="cert-issuer">{cert.issuer}</p>
