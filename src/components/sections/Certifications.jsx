@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGoogleDrive } from 'react-icons/fa';
 import { certifications } from '../../data/resumeData';
 import './Certifications.css';
 
@@ -57,13 +57,15 @@ const Certifications = () => {
                 transition: { duration: 0.2 }
               }}
             >
-              <div className="cert-icon">
-                <span className="icon-emoji">{cert.icon}</span>
-              </div>
-              
+              {/* Thumbnail */}
+              <a href={cert.link} target="_blank" rel="noopener noreferrer">
+                <img src={cert.thumbnail} alt={cert.title} className="cert-thumbnail" />
+              </a>
+
+              {/* Content */}
               <div className="cert-content">
                 <h3 className="cert-title">{cert.title}</h3>
-                <p className="cert-issuer">{cert.issuer}</p>
+                <p className="cert-issuer">{cert.provider}</p>
                 <p className="cert-description">{cert.description}</p>
 
                 <div className="cert-links">
@@ -75,7 +77,7 @@ const Certifications = () => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <FaExternalLinkAlt />
+                    <FaGoogleDrive/>
                     <span>View Certificate</span>
                   </motion.a>
                 </div>

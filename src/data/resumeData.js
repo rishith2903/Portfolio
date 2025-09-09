@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Full-Stack Developer | AI Enthusiast",
   email: "rishithpachipulusu@gmail.com",
   phone: "+91 7901357303",
-  location: "Vijayawada, India",
+  location: "Narasaraopeta, India",
   about: "Versatile Computer Science student skilled in AI/ML and Full-Stack Development. Experienced in building end-to-end solutions from backend systems to intelligent AI applications. Passionate about delivering innovative, high-quality software.",
   github: "https://github.com/rishith2903",
   linkedin: "https://www.linkedin.com/in/rishith-kumar-pachipulusu-2748b4380/",
@@ -49,37 +49,54 @@ export const skills = {
 };
 
 export const certifications = [
+  
   {
     id: 1,
-    title: "AWS Academy Cloud Foundations Badge",
-    issuer: "AWS Academy",
-    description: "Learned core cloud concepts and foundational AWS services for cloud computing.",
-    icon: "🏆",
-    link: "https://drive.google.com/file/d/1o2KkPad0m_jFkK_Q6FYLcV1E2vPTgKF3/view?usp=sharing"
-  },
-  {
-    id: 2,
     title: "Python for AI",
-    issuer: "Boston Training Academy",
+    provider: "Boston Training Academy",
     description: "Gained hands-on experience in Python for building AI and ML solutions.",
-    icon: "🧠",
+    thumbnail: "/images/Certificates/Python for AI.png",
     link: "https://drive.google.com/file/d/1wHFtc1-j9k90OG4mZYq948nd_xt3MT8q/view?usp=drive_link"
   },
   {
-    id: 3,
+    id: 2,
     title: "Full Stack Web Development",
-    issuer: "SmartED Innovations",
+    provider: "SmartED Innovations",
     description: "Completed end-to-end web development training with real-world project deployment.",
-    icon: "🌐",
+    thumbnail: "images/Certificates/Full Stack Web Development.png",
     link: "https://drive.google.com/file/d/1nQAVUPhYyzI-5ElZXYXz2IdExkKXblWR/view?usp=drive_link"
   },
   {
-    id: 4,
+    id: 3,
     title: "Oracle Certified Generative AI Professional",
-    issuer: "Oracle University",
+    provider: "Oracle University",
     description: "Certified in cutting-edge generative AI techniques and Oracle's AI tools.",
-    icon: "🤖",
+    thumbnail: "/images/Certificates/Gen AI.png",
     link: "https://drive.google.com/file/d/1rP1cYl1GlBrntmlKNgPML5SBnFVKGiME/view?usp=drive_link"
+  },
+  {
+    id: 4,
+    title: "AWS Academy Cloud Foundations Badge",
+    provider: "AWS Academy",
+    description: "Learned core cloud concepts and foundational AWS services for cloud computing.",
+    thumbnail: "/images/Certificates/AWS.png",
+    link: "https://drive.google.com/file/d/1o2KkPad0m_jFkK_Q6FYLcV1E2vPTgKF3/view?usp=sharing"
+  },
+  {
+    id: 5,
+    title: "Solutions Architecture Job Simulation",
+    provider: "AWS and Forage",
+    description: "I completed practical tasks in Designing a simple, scalable, hosting architecture",
+    thumbnail: "/images/Certificates/AWS-Solutions Architecture Job Simulation.png",
+    link: "https://drive.google.com/file/d/1qV-IhoubQLluaH6k18DRtKZS7e0gH96a/view?usp=sharing"
+  },
+  {
+    id: 6,
+    title: "Software Engineering Job Simulation",
+    provider: " Electronics Arts and Forage",
+    description: "I completed practical tasks in Write a Feature Proposal,Create a Game Object Class,Improve Inventory System, and Live Bugfix",
+    thumbnail: "/images/Certificates/Electronics Arts.png",
+    link: "https://drive.google.com/file/d/1qV-IhoubQLluaH6k18DRtKZS7e0gH96a/view?usp=sharing"
   }
 ];
 

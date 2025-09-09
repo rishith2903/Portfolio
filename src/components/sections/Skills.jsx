@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaJava, FaPython, FaReact, FaAws, FaDocker, FaGitAlt, FaNode } from 'react-icons/fa';
+import { FaJava, FaPython, FaReact, FaAws, FaDocker, FaGitAlt, FaNode,FaJs } from 'react-icons/fa';
 import { SiMongodb, SiSpringboot, SiNumpy, SiTensorflow, SiKeras, SiScikitlearn, SiPandas } from 'react-icons/si';
 import './Skills.css';
 
@@ -8,7 +8,7 @@ const skillIcons = {
   Java: <FaJava />,
   Python: <FaPython />,
   SQL: "🗄️",
-  JavaScript: "⚡",
+  JavaScript: <FaJs/>,
   "React.js": <FaReact />,
   "Spring Boot": <SiSpringboot />,
   "Node.js": <FaNode />,
