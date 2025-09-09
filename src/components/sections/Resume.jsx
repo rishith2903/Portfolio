@@ -130,7 +130,7 @@ const Resume = () => {
               </div>
               <div className="preview-item">
                 <span className="preview-label">Focus</span>
-                <span className="preview-value">Backend Development</span>
+                <span className="preview-value">Full-Stack Development</span>
               </div>
             </div>
           </motion.div>
