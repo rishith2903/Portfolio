@@ -29,7 +29,7 @@ export const education = [
   },
   {
     id: 3,
-    institution: "Visvabharati High School",
+    institution: "Viswabharati High School",
     degree: "Secondary School Certificate (SSC)",
     duration: "2016 - 2020",
     grade: "100%",
