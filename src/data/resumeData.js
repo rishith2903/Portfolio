@@ -124,17 +124,9 @@ export const projects = [
     thumbnail:  "/images/Project/MedReserve_AI.png",
 
   },
+  
   {
     id: 3,
-    title: "Personal Portfolio Website",
-    description: "Designed and developed a responsive personal portfolio website using React.js, Tailwind CSS, and Framer Motion. Features project showcases, certification display, dynamic routing, dark/light themes, and SEO optimization. Deployed on Vercel with GitHub content linking.",
-    technologies: ["React.js", "Tailwind CSS", "Framer Motion", "Vercel", "Responsive Design"],
-    github: "https://github.com/rishith2903/Portfolio",
-    live: "https://portfolio-one-jade-97.vercel.app/",
-    thumbnail: "/images/Project/portfolio.png"
-  },
-  {
-    id: 4,
     title: "AIthlete – AI-Powered Fitness Platform",
     description: "Built a full-stack fitness website using Spring Boot, React.js, and PostgreSQL. Integrated AI models for personalized workouts, diet plans, chatbot, and pose detection. Delivered a scalable platform with dashboards, theming, and live deployment.",
     technologies: ["Spring Boot", "React.js", "PostgreSQL", "AI Model", "Chatbot", "Pose Detection","Python","Java"],
@@ -143,6 +135,15 @@ export const projects = [
     live: null,
     
   },
+  {
+    id: 4,
+    title: "GenTask – Generative AI for smarter tasks",
+    description: "A productivity platform leveraging Generative AI and NLP to manage tasks intelligently. Supports multilingual inputs, automatic prioritization, subtask generation, and smart activity summarization. Built with React, Flask, and MongoDB for secure and scalable task management.",
+    technologies: ["NLP Model"," Generative AI", "Flask", "React.js", "MongoDB"],
+    github: null,
+    live:null,
+    thumbnail: null,
+  }
 ];
 
 export const extracurriculars = [
