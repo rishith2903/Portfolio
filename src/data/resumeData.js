@@ -128,8 +128,8 @@ export const projects = [
   {
     id: 3,
     title: "AIthlete – AI-Powered Fitness Platform",
-    description: "Built a full-stack fitness website using Spring Boot, React.js, and PostgreSQL. Integrated AI models for personalized workouts, diet plans, chatbot, and pose detection. Delivered a scalable platform with dashboards, theming, and live deployment.",
-    technologies: ["Spring Boot", "React.js", "PostgreSQL", "AI Model", "Chatbot", "Pose Detection","Python","Java"],
+    description: "Built a full-stack fitness website using Spring Boot, React.js, and MOngoDB. Integrated AI models for personalized workouts, diet plans, chatbot, and pose detection. Delivered a scalable platform with dashboards, theming, and live deployment.",
+    technologies: ["Spring Boot", "React.js", "MOngoDB", "AI Model", "Chatbot", "Pose Detection","Python","Java"],
     github: "https://github.com/rishith2903/AIthlete", // add repo link if exists
     githubBackend: "https://github.com/rishith2903/AIthlete_backend",
     live: null,
