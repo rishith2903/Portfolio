@@ -130,7 +130,7 @@ export const projects = [
     title: "AIthlete – AI-Powered Fitness Platform",
     description: "Built a full-stack fitness website using Spring Boot, React.js, and MOngoDB. Integrated AI models for personalized workouts, diet plans, chatbot, and pose detection. Delivered a scalable platform with dashboards, theming, and live deployment.",
     technologies: ["Spring Boot", "React.js", "MOngoDB", "AI Model", "Chatbot", "Pose Detection","Python","Java"],
-    github: "https://github.com/rishith2903/AIthlete", // add repo link if exists
+    github: "https://github.com/rishith2903/AIthlete", 
     githubBackend: "https://github.com/rishith2903/AIthlete_backend",
     live: null,
     
@@ -140,7 +140,25 @@ export const projects = [
     title: "GenTask – Generative AI for smarter tasks",
     description: "A productivity platform leveraging Generative AI and NLP to manage tasks intelligently. Supports multilingual inputs, automatic prioritization, subtask generation, and smart activity summarization. Built with React, Flask, and MongoDB for secure and scalable task management.",
     technologies: ["NLP Model"," Generative AI", "Flask", "React.js", "MongoDB"],
-    github: null,
+    github: "https://github.com/rishith2903/GenTask",
+    live:null,
+    thumbnail: null,
+  },
+  {
+    id: 5,
+    title: "Personal-Finance-Manager",
+    description: "Delivering a full-stack personal finance manager from scratch, I engineered an automated financial tracking solution. The backend runs on Java Spring Boot, using Spring Security for JWT authentication and MongoDB for data storage. The frontend is a dynamic React SPA styled with Tailwind CSS. Its core feature is a custom, rule-based engine I built in the TransactionParserService that uses RegEx and keyword matching to parse raw bank SMS messages. This system eliminates manual data entry, providing users with an instant dashboard and automated financial recommendations to manage their spending.",
+    technologies: ["Spring Boot", "React.js", "MongoDB","Finance"],
+    github: "https://github.com/rishith2903/Personal-Finance-Manager",
+    githubBackend:"https://github.com/rishith2903/AI-Personal-Finance-Manager-Backend", 
+    live: "https://personal-finance-manager-peach.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Deepstack",
+    description: "I built a reinforcement learning trading system that achieved strong automated decision accuracy using a Deep Q Network (DQN). I designed the full pipeline, including a custom trading environment, experience replay, a PyTorch-based DQN model, and training and inference scripts. This project helped me understand RL-driven financial modeling and showed how AI can improve trading efficiency and reduce manual decision errors.",
+    technologies: ["Python","PyTorch","NumPy","Pandas","Scikit-learn"],
+    github: "https://github.com/rishith2903/Deepstack",
     live:null,
     thumbnail: null,
   }
