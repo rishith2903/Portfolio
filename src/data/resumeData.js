@@ -4,7 +4,7 @@ export const personalInfo = {
   email: "rishithpachipulusu@gmail.com",
   phone: "+91 7901357303",
   location: "Narasaraopeta, India",
-  about: "Versatile Computer Science student skilled in AI/ML and Full-Stack Development. Experienced in building end-to-end solutions from backend systems to intelligent AI applications. Passionate about delivering innovative, high-quality software.",
+  about: "I'm a Computer Science student at VIT-AP University with a passion for building intelligent, full-stack applications. From crafting AI-powered healthcare platforms to developing real-time speech-to-text systems, I love turning complex ideas into elegant solutions. My expertise spans Spring Boot, React, and cutting-edge AI/ML frameworks like TensorFlow and PyTorch. When I'm not coding, you'll find me exploring the latest in NLP, contributing to tech communities, or capturing moments through photography.",
   github: "https://github.com/rishith2903",
   linkedin: "https://www.linkedin.com/in/rishith-kumar-pachipulusu-2748b4380/",
   portfolio: "https://portfolio-one-jade-97.vercel.app/"
@@ -119,7 +119,7 @@ export const projects = [
     technologies: ["Spring Boot", "FastAPI", "Random Forest", "TF-IDF", "React.js", "JWT", "PostgreSQL", "NLP Chatbot", "REST API", "Java", "Python"],
     github: "https://github.com/rishith2903/MedReserve-AI",
     live: "https://med-reserve-ai.vercel.app/login",
-    thumbnail:  "/images/Project/MedReserve_AI.png",
+    thumbnail: "/images/Project/MedReserve_AI.png",
 
   },
 
@@ -131,7 +131,7 @@ export const projects = [
     github: "https://github.com/rishith2903/Athlete",
     live: "https://athlete-eight.vercel.app/",
     thumbnail: "/images/Project/Athlete.png",
-    
+
   },
   {
     id: 4,
