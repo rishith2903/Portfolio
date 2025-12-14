@@ -63,7 +63,11 @@ const Skills = () => {
     { title: 'Soft Skills', skills: skills.soft.filter(s => s) },
   ];
 
-  const activeCategory = skillCategories.find(cat => cat.title === activeTab);
+  // Get all skills for "View All" tab
+  const allSkills = skillCategories.flatMap(cat => cat.skills);
+  const activeCategory = activeTab === 'All'
+    ? { skills: allSkills }
+    : skillCategories.find(cat => cat.title === activeTab);
 
   return (
     <section id="skills" className="skills">
@@ -87,6 +91,12 @@ const Skills = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           viewport={{ once: true }}
         >
+          <button
+            className={`tab-btn ${activeTab === 'All' ? 'active' : ''}`}
+            onClick={() => setActiveTab('All')}
+          >
+            View All
+          </button>
           {skillCategories.map((category) => (
             <button
               key={category.title}

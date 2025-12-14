@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa';
 import { personalInfo } from '../../data/resumeData';
 import './Hero.css';
 
@@ -8,7 +8,7 @@ const Hero = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  
+
   const titles = [
     "Full-Stack Developer",
     "AI Enthusiast"
@@ -51,7 +51,7 @@ const Hero = () => {
         <div className="gradient-orb orb-2"></div>
         <div className="gradient-orb orb-3"></div>
       </div>
-      
+
       <div className="container">
         <div className="hero-content">
           <motion.div
@@ -68,7 +68,7 @@ const Hero = () => {
             >
               Hi, I am {personalInfo.name}
             </motion.h1>
-            
+
             <motion.div
               className="hero-title"
               initial={{ opacity: 0, y: 30 }}
@@ -78,7 +78,7 @@ const Hero = () => {
               <span className="typing-text">{displayText}</span>
               <span className="cursor">|</span>
             </motion.div>
-            
+
 
             <motion.div
               className="hero-buttons"
@@ -138,9 +138,19 @@ const Hero = () => {
               >
                 <FaEnvelope />
               </motion.a>
+              <motion.a
+                href={`${import.meta.env.BASE_URL}resume.pdf`}
+                download="Rishith_Kumar_Resume.pdf"
+                className="social-link download-resume"
+                whileHover={{ scale: 1.2, y: -5 }}
+                whileTap={{ scale: 0.9 }}
+                title="Download Resume"
+              >
+                <FaDownload />
+              </motion.a>
             </motion.div>
           </motion.div>
-          
+
           <motion.div
             className="hero-avatar"
             initial={{ opacity: 0, x: 100 }}

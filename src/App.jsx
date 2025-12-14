@@ -12,6 +12,7 @@ import Contact from './components/sections/Contact';
 import Footer from './components/Footer';
 import CursorGlow from './components/ui/CursorGlow';
 import ScrollProgress from './components/ui/ScrollProgress';
+import BackToTop from './components/ui/BackToTop';
 import './styles/App.css';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
       <CursorGlow />
       <ScrollProgress />
       <Navigation />
-      
+
       <main>
         <Hero />
         <About />
@@ -31,7 +32,8 @@ function App() {
         <Resume />
         <Contact />
       </main>
-      
+
+      <BackToTop />
       <Footer />
     </div>
   );
