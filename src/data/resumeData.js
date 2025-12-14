@@ -38,18 +38,18 @@ export const education = [
 ];
 
 export const skills = {
-  languages: ["Java", "Python", "SQL", "JavaScript"],
+  languages: ["Java", "Python", "SQL", "JavaScript", "TypeScript"],
   web: ["HTML", "CSS", "React.js"],
-  backend: ["Spring Boot", "Node.js", "REST APIs"],
+  backend: ["Spring Boot", "Node.js", "REST APIs", "FastAPI", "Express.js"],
   cloud: ["AWS", "MySQL", "MongoDB"],
-  tools: ["Git", "Docker", "GitHub Actions"],
-  aiml: ["TensorFlow", "Keras", "Scikit-learn", "Pandas", "NumPy"],
-  nlp: ["NLTK", "Hugging Face", "BERT", "Whisper"],
+  tools: ["Git", "Docker", "GitHub", "Postman", "Swagger", ""],
+  aiml: ["TensorFlow", "Keras", "Scikit-learn", "Pandas", "NumPy", "Matplotlib", "Seaborn", "PyTorch"],
+  nlp: ["NLTK", "Hugging Face", "BERT", "Whisper", "Text Summarization", "Sentiment Analysis", "Speech-to-Text", "Text-to-Speech"],
   soft: ["Teamwork", "Problem-Solving", "Communication", "Leadership", "Time Management", "Critical Thinking"]
 };
 
 export const certifications = [
-  
+
   {
     id: 1,
     title: "Python for AI",
@@ -102,65 +102,64 @@ export const certifications = [
 
 
 export const projects = [
-  
+
   {
     id: 1,
     title: "Smart Summary Q&A – AI-Powered Transcript Platform",
-    description: "Developed a real-time video/audio summarization and Q&A system using Whisper (OpenAI) for speech-to-text and BART for summarization. Built with React.js frontend and Node.js + FastAPI backend, using WebSockets for live transcript streaming. Enabled dynamic Q&A generation with OpenAI GPT, serving 500+ users and improving response accuracy by 20%.",
-    technologies: ["NLP Model","Whisper", "BART", "OpenAI", "React.js", "FastAPI", "Node.js", "WebSocket", "Speech-to-Text", "Real-time Transcript"],
-    github: "https://github.com/rishith2903/Smart-Summary-Q-A",
-    githubBackend: "https://github.com/rishith2903/Smart-Summary-Q-A_Backend",
+    description: "A cutting-edge full-stack application revolutionizing video and document content interaction. Leverages OpenAI's Whisper for audio transcription, Xenova Transformers for NLP, and advanced summarization models. Features multiple transcription methods, intelligent content summarization, and a context-aware Q&A system that understands document semantics. Built with React.js frontend and Node.js + FastAPI backend using WebSockets for live streaming, with a robust fallback system ensuring 100% uptime.",
+    technologies: ["Whisper AI", "Xenova Transformers", "OpenAI GPT", "React.js", "FastAPI", "Node.js", "WebSocket", "NLP", "Speech-to-Text"],
+    github: "https://github.com/rishith2903/smart-summary-Q-A",
     live: "https://smart-summary-q-a.vercel.app/",
     thumbnail: "/images/Project/smart-summary.png"
   },
   {
     id: 2,
     title: "MedReserve AI – Healthcare Booking Platform",
-    description: "Built a full-stack healthcare booking system using Spring Boot, React.js, and FastAPI that enables users to search, book, and manage doctor appointments. Integrated JWT-based authentication for secure role-based access (admin, doctor, patient), real-time dashboards, and AI-driven NLP chatbot for symptom-based doctor recommendations. Reduced appointment booking time by 30%. Backend deployed on Render with PostgreSQL; frontend hosted on Vercel.",
-    technologies: ["Spring Boot", "FastAPI", "ML model","React.js", "JWT", "PostgreSQL", "NLP", "Chatbot", "REST API", "Role-based Auth","Java"],
+    description: "A comprehensive, production-ready healthcare management platform bridging patients and healthcare providers through AI-driven automation. Features symptom-to-specialization prediction using Random Forest classifiers with TF-IDF vectorization, role-aware chatbots (Patient & Doctor) for 24/7 conversational support, and complete appointment management. Built with Spring Boot backend, React.js frontend, and Python FastAPI microservices for ML. Supports multi-role authentication (admin, doctor, patient) with robust dashboards and analytics.",
+    technologies: ["Spring Boot", "FastAPI", "Random Forest", "TF-IDF", "React.js", "JWT", "PostgreSQL", "NLP Chatbot", "REST API", "Java", "Python"],
     github: "https://github.com/rishith2903/MedReserve-AI",
-    githubBackend: "https://github.com/rishith2903/MedReserve-AI_Backend",
     live: "https://med-reserve-ai.vercel.app/login",
     thumbnail:  "/images/Project/MedReserve_AI.png",
 
   },
-  
+
   {
     id: 3,
-    title: "AIthlete – AI-Powered Fitness Platform",
-    description: "Built a full-stack fitness website using Spring Boot, React.js, and MOngoDB. Integrated AI models for personalized workouts, diet plans, chatbot, and pose detection. Delivered a scalable platform with dashboards, theming, and live deployment.",
-    technologies: ["Spring Boot", "React.js", "MOngoDB", "AI Model", "Chatbot", "Pose Detection","Python","Java"],
-    github: "https://github.com/rishith2903/AIthlete", 
-    githubBackend: "https://github.com/rishith2903/AIthlete_backend",
-    live: null,
+    title: "Athlete – AI-Powered Fitness Platform",
+    description: "A comprehensive AI-powered fitness platform combining cutting-edge ML algorithms with modern web technologies. Features Deep Reinforcement Learning for workout recommendations with multi-objective optimization, Computer Vision with MediaPipe and PyTorch for real-time 3D pose estimation and biomechanical analysis, and NLP-powered fitness chatbot using LangChain. Built with microservices architecture: FastAPI AI services communicating with Spring Boot backend and React.js frontend.",
+    technologies: ["Spring Boot", "React.js", "MongoDB", "MediaPipe", "PyTorch", "LangChain", "FastAPI", "Deep RL", "Computer Vision", "Java", "Python"],
+    github: "https://github.com/rishith2903/Athlete",
+    live: "https://athlete-eight.vercel.app/",
+    thumbnail: "/images/Project/Athlete.png",
     
   },
   {
     id: 4,
-    title: "GenTask – Generative AI for smarter tasks",
-    description: "A productivity platform leveraging Generative AI and NLP to manage tasks intelligently. Supports multilingual inputs, automatic prioritization, subtask generation, and smart activity summarization. Built with React, Flask, and MongoDB for secure and scalable task management.",
-    technologies: ["NLP Model"," Generative AI", "Flask", "React.js", "MongoDB"],
-    github: "https://github.com/rishith2903/GenTask",
-    live:null,
-    thumbnail: null,
+    title: "Personal Finance Manager – AI-Powered Analytics",
+    description: "A full-stack web application transforming raw transaction data into actionable financial intelligence. Features AI-powered analytics for automatic transaction categorization, spending pattern identification, and personalized recommendations. The intelligent insight engine analyzes monthly spending behaviors, calculates savings rates, identifies top merchants, and suggests budget optimizations. Built with Spring Boot backend, React.js with Tailwind CSS frontend, and MongoDB for data storage, with Spring Security JWT authentication.",
+    technologies: ["Spring Boot", "React.js", "MongoDB", "Tailwind CSS", "JWT", "AI Analytics", "Spring Security", "Java"],
+    github: "https://github.com/rishith2903/Personal-Finance-Manager",
+    live: "https://personal-finance-manager-neon.vercel.app/",
+    thumbnail: "/images/Project/Personal-Finance-Manager.png"
   },
   {
     id: 5,
-    title: "Personal-Finance-Manager",
-    description: "Delivering a full-stack personal finance manager from scratch, I engineered an automated financial tracking solution. The backend runs on Java Spring Boot, using Spring Security for JWT authentication and MongoDB for data storage. The frontend is a dynamic React SPA styled with Tailwind CSS. Its core feature is a custom, rule-based engine I built in the TransactionParserService that uses RegEx and keyword matching to parse raw bank SMS messages. This system eliminates manual data entry, providing users with an instant dashboard and automated financial recommendations to manage their spending.",
-    technologies: ["Spring Boot", "React.js", "MongoDB","Finance"],
-    github: "https://github.com/rishith2903/Personal-Finance-Manager",
-    githubBackend:"https://github.com/rishith2903/AI-Personal-Finance-Manager-Backend", 
-    live: "https://personal-finance-manager-peach.vercel.app/",
+    title: "GenTask – Generative AI Task Manager",
+    description: "An intelligent productivity platform leveraging Generative AI and NLP for smart task management. Features AI-powered natural language task parsing, intelligent prioritization by urgency, automated daily/weekly productivity summaries, and background scheduling for deadline reminders. Built with Flask backend (JWT authentication, CRUD operations) and modern React frontend with Tailwind CSS. Supports advanced search/filtering and real-time task status updates.",
+    technologies: ["Flask", "React.js", "MongoDB", "OpenAI API", "NLP", "Generative AI", "JWT", "Tailwind CSS"],
+    github: "https://github.com/rishith2903/GenTask",
+    live: null,
+    thumbnail: null
   },
+
   {
     id: 6,
-    title: "Deepstack",
-    description: "I built a reinforcement learning trading system that achieved strong automated decision accuracy using a Deep Q Network (DQN). I designed the full pipeline, including a custom trading environment, experience replay, a PyTorch-based DQN model, and training and inference scripts. This project helped me understand RL-driven financial modeling and showed how AI can improve trading efficiency and reduce manual decision errors.",
-    technologies: ["Python","PyTorch","NumPy","Pandas","Scikit-learn"],
+    title: "Deepstack – RL-Based Trading Strategy",
+    description: "A reinforcement learning-based trading system implementing Deep Q Network (DQN) for automated trading decisions. Features a custom trading environment with buy, sell, and hold actions, experience replay training pipeline, and saved model weights for inference. Includes complete project structure with training scripts, inference module, and Jupyter notebook for experiments and visualization. Demonstrates RL-driven financial modeling for improved trading efficiency.",
+    technologies: ["Python", "PyTorch", "Deep Q Network", "Reinforcement Learning", "NumPy", "Pandas", "Scikit-learn"],
     github: "https://github.com/rishith2903/Deepstack",
-    live:null,
-    thumbnail: null,
+    live: null,
+    thumbnail: null
   }
 ];
 
